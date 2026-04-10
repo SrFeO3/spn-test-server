@@ -1,0 +1,18 @@
+[package]
+name = "spn-test-server"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axum = "0.8"
+tokio = { version = "1", features = ["full"] }
+tower = "0.5"
+tower-http = { version = "0.6", features = ["trace", "set-header"] }
+chrono = "0.4"
+clap = { version = "4.6", features = ["derive", "env"] }
+rand = "0.8"
+futures-util = "0.3"
+bytes = "1.0"
+async-stream = "0.3"
+http = "1.0"
+serde = { version = "1.0", features = ["derive"] }
